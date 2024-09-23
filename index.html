@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+        <meta name = viewport content = "width=device-width initial-scale=1.0">
+        <link rel = "icon" type = "image/webp" href = "Images/headshot.jpg">
+        <title>William Chiu's Portfolio</title>
+        <link rel = "stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <img src="Images/Aboutme.webp" class="personalphoto">
+            <header id="header">
+                <a href="#" class="logo" id="logo">William</a>
+                <div class="toggle" id="menubar"></div>
+                <ul class = "navigation">
+                    <li><a href="#" style ="--i:1;" class="active" id="home">Home</a></li>
+                    <li><a href="#" style ="--i:2;">About</a></li>
+                    <li><a href="#" style ="--i:3;">Resume</a></li>
+                    <li><a href="#" style ="--i:4;">Education</a></li>
+                    <li><a href="#" style ="--i:5;">Contact</a></li>
+                </ul>
+                <div class="dropdown-icon" id="dropdown-icon">
+                    <button><embed src="Images/bars-solid.png" class="dropdown-icon-permanent" id="dropdown-icon-permanent"></button>
+                    <div class="content">
+                        <li><a href="#" style ="--i:1;" class="active" id="home">Home</a></li>
+                        <li><a href="#" style ="--i:2;">About</a></li>
+                        <li><a href="#" style ="--i:3;">Resume</a></li>
+                        <li><a href="#" style ="--i:4;">Education</a></li>
+                        <li><a href="#" style ="--i:5;">Contact</a></li>
+                    </div>
+                </div>
+            </header>
+            <div class="content">
+                <div class="textbox">
+                    <h2>
+                        William Chiu
+                    </h2>
+                    <p>Hey!  My name's William Chiu and I'm an incoming Software Engineering Freshman at the University of Waterloo.  I have an interest in fullstack development and music.  When I'm not busy with work, you can find me at the gym, playing the piano, or eating out with friends!</p>
+                    <a href="#">Read More</a>
+                </div>
+
+            </div>
+
+            <ul class="sociallinks">
+                <li><a href=https://www.instagram.com/william.rchiu/ class="socialhyperlinks"><embed src="Images/instagram-brands-solid.png" id=instagram class="socialicon"></a></li>
+                <li><a href=# class="socialhyperlinks"><embed src="Images/envelope-regular.png" class="socialicon"></a></li>
+                <li><a href=https://github.com/WilliamRChiu class="socialhyperlinks"><embed src="Images/github-brands-solid.png" class="socialicon"></a></li>
+        
+            </ul>
+        </section>
+        <script>
+            const menuToggle = document.querySelector('.toggle');
+            const navigationToggle = document.querySelector('.navigation');
+            const DropdownIconPermanentToggle = document.querySelector('.Icon')
+            menuToggle.onclick = function(){
+                menuToggle.classList.toggle('active');
+                navigationToggle.classList.toggle('active');
+                DropdownIconPermanentToggle.classList.toggle('.Icon');
+
+            }
+        </script>
+        <section class="transition_background1">
+
+        </section>
+        <section class="transition_background2">
+            <img src="Images/Chinese Art (parts)/backdrop-01.png" class="Transition_Images" id="backdrop">
+            <img src="Images/Chinese Art (parts)/moon-01.png" class="Transition_Images" id="moon">
+            <h2 id="text"><b>About Me</b></h2>
+            <img src="Images/Chinese Art (parts)/Mountains (layer2)-01.png" class="Transition_Images" id="middleground">    
+            <img src="Images/Chinese Art (parts)/Foreground (layer 3)-01.png" class="Transition_Images" id="foreground">
+
+
+        </section>
+        <div class="sec" id="sec2">
+            <h2>What do I do?</h2>
+            <br>
+            <p>⭐Develop interactive websites ready for various use cases</p>
+            <br>
+            <p>⭐Learning to link responsive front end design with application backend Java</p>
+            <embed src="Images/headshot.jpg">
+        </div>
+        
+
+
+
+        <script src="main.js"></script>
+    </body>
+</html>
